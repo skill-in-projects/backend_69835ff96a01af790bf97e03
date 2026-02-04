@@ -6,7 +6,7 @@ namespace Backend.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class TestController : ControllerBase
+public class4 TestController : ControllerBase
 {
     private readonly string _connectionString;
 
