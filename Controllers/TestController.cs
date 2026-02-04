@@ -6,7 +6,7 @@ namespace Backend.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class4 TestController : ControllerBase
+public class TestController : ControllerBase
 {
     private readonly string _connectionString;
 
@@ -14,7 +14,7 @@ public class4 TestController : ControllerBase
     {
         var rawConnectionString = configuration.GetConnectionString("DefaultConnection") 
             ?? Environment.GetEnvironmentVariable("DATABASE_URL") 
-            ?? throw new InvalidOperationException("Database connection string not found");
+            ?? throw new InvalidOperationException("Database connection string not found!");
         
         // Convert PostgreSQL URL to Npgsql connection string format if needed
         _connectionString = ConvertPostgresUrlToConnectionString(rawConnectionString);
