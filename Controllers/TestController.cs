@@ -8,7 +8,7 @@ namespace Backend.Controllers;
 [Route("api/[controller]")]
 public class TestController : ControllerBase
 {
-    private readonly string _connectionString;
+    private readoשnly string _connectionString;
 
     public TestController(IConfiguration configuration)
     {
